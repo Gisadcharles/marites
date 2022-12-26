@@ -1,0 +1,117 @@
+body {
+    font-size: 15pt;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+  background: url(images.jpeg);
+  min-height: 100vh;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  font-family: sans-serif;
+}
+
+.ho1 {
+  text-align: center;
+  position: relative;
+}
+
+.ho3 {
+  background: none;
+  border-radius: 30px;
+  padding: 10px 10px;
+  border: white 2px solid;
+  position: relative;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a, .ho3 {
+  top: 40px;
+  left: 155px;
+}
+
+.pin {
+  font-size: 12px;
+  position: relative;
+  text-align: justify;
+  letter-spacing: 3px;
+  text-align: center;
+  width: 190px;
+  top: 160px;
+  left: 40px;
+}
+
+p {
+  color: white;
+}
+
+.ho2 {
+  position: relative;
+  right: 2px;
+  top: 10px;
+  font-family: 'pushster', cursive;
+  font-size: 15px;
+}
+
+.snow, snowfall {
+  background: url(snow.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: 0 0;
+}
+
+.snow {
+  background-size: 40em;
+  animation: snowfall 30s linear infinite;
+}
+
+.snowfall {
+  background-size: 100em;
+  animation: snowfall 30s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes snowfall {
+  100% {
+    background-position: 50em 50em;
+  }
+}
+
+@keyframes snow {
+  100%{
+    background-position: 10em 0;
+  }
+}
+
+.aa:hover > .bb {
+ display: block;
+}
+
+.bb {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.aa:hover > .bb {
+  opacity: 1;
+}
+
+.bb > .pin {
+  display: block;
+}
+
+video {
+  width: 70%;
+  height: 40%;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
